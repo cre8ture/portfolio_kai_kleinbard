@@ -1,0 +1,26 @@
+#read-aloud-button {
+  /* Set the initial color of the SVG */
+  color: blue;
+}
+
+#read-aloud-button:hover {
+  /* Change the color of the SVG on hover */
+  color: red;
+}
+
+.fixedButton.clicked {
+  /* Change the background color when clicked */
+  color: red; /* Change the text color when clicked */
+}
+
+.fixedButton.notClicked {
+  /* Change the background color when clicked */
+  color: blue; /* Change the text color when clicked */
+}
+
+.fixedButton {
+  position: fixed;
+  bottom: 20px; /* Adjust this value to control the distance from the bottom */
+  right: 20px; /* Adjust this value to control the distance from the right */
+  z-index: 9999; /* Ensure it's above other content */
+}
