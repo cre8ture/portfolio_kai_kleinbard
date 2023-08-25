@@ -187,7 +187,7 @@ const AnimatedComponent = () => {
   return (
     <div>
       {/* Display on small screens */}
-      <div className={`hidden lg:block md:block`}>
+      <div className={`hidden lg:block`}>
         {" "}
         {/* Display on medium and large screens */}{" "}
         {/* Display on medium and large screens */}
@@ -266,7 +266,7 @@ const AnimatedComponent = () => {
           </div>
         </div>
       </div>
-      {isMobileOrTablet&&<MobileDisplay className={`sm:block md:hidden lg:hidden`} />}
+      {isMobileOrTablet&&<MobileDisplay className={`sm:block md:block lg:hidden`} />}
     </div>
   );
 };

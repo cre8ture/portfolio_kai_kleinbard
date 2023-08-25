@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import AnimatedText from "../animations/Animated_text_final";
-import Typing from "../typing/Typing";
+// import Typing from "../typing/Typing";
 import { mission } from "../writing/mission";
-import Bio from "../../components/cards/Bio.js";
+// import Bio from "../../components/cards/Bio.js";
 import Footer from "../footer/Footer";
 import Table from "../tables/Table_scroll";
 import { bio } from "../writing/bio";
 import Load_imgs from "../image/load_imgs_into_pixels_mobile";
+import Image from "next/image";
 
 const textToType =
   "Hello, I'm Kai Kleinbard, a software developer, AI specialist, and educator.";
@@ -21,11 +22,11 @@ const AnimatedComponent = () => {
     setIsVisible(true);
   }, []);
 
-  console.log("we in the mobile!!!")
+  console.log("we in the mobile!!!");
 
   return (
     <div
-    className="MobileDisplay"
+      className="MobileDisplay"
       style={{
         display: "flex",
         flexDirection: "column",
@@ -71,7 +72,14 @@ const AnimatedComponent = () => {
           padding: "10px",
         }}
       >
-        <Load_imgs />
+        {/* <Load_imgs /> */}
+        <Image
+          src="/kk2.png"
+          alt="Image of Kai Kleinbard"
+          width={800}
+          height={800}
+        ></Image>
+        <br />
         <AnimatedText text={workingOn} />
       </div>
       <div
