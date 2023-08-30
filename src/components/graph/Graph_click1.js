@@ -13,6 +13,9 @@ import {
   creative_coding_nodes,
   creative_coding_edges,
 } from "./data/creative_coding";
+import Modal from '../modal/Modal2'
+import GraphInstructions from '../modal/GraphInstructions'
+
 
 import CustomControls from "./controls/Controls";
 
@@ -238,6 +241,11 @@ const AddNodeOnEdgeDrop = ({ setIsClearGraph }) => {
       ref={reactFlowWrapper}
       style={{ width: "100vw", height: "100vh" }}
     >
+            <Modal>
+        <h2 className="text-lg font-bold mb-4">Me in a graph!</h2>
+        {/* <p>Modal content goes here.</p> */}
+        <GraphInstructions />
+      </Modal>
       <ReactFlow
         fitView={fitViewOptions}
         nodes={nodes}
