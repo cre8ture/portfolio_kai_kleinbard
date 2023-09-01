@@ -10,7 +10,14 @@ const Footer = () => {
           className="text-blue-500 hover:scale-110 transform transition duration-300"
         >
           Get in touch
+        </a> | 
+        <a
+          href="https://github.com/cre8ture"
+          className="text-blue-500 hover:scale-110 transform transition duration-300"
+        >
+         Github
         </a>
+        
       </p>
     </footer>
   );
