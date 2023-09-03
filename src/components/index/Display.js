@@ -195,7 +195,7 @@ const AnimatedComponent = () => {
         {/* Display on medium and large screens */}{" "}
         {/* Display on medium and large screens */}
         <div
-        className='w-3/5'
+        className='w-4/5 mx-auto'
           style={{
             display: "flex",
             flexDirection: "column",
@@ -204,19 +204,19 @@ const AnimatedComponent = () => {
           }}
         >
           {/* <Typing textToType={textToType} /> */}
-          <div
+          <div className='text-4xl'
             style={{
               position: "relative",
 
-              left: "0",
-              margin: "auto", // Corrected 'margins' to 'margin'
-              width: "100vw",
-              marginLeft: "10px",
+              // left: "0",
+              // margin: "auto", // Corrected 'margins' to 'margin'
+              // width: "100vw",
+              // marginLeft: "10px",
               background: "black",
               fontFamily: "monospace", // Add monospace font
-              fontSize: "30px", // Set font size to 20
-              lineHeight: "1.5", // Add space beneath each line
-              padding: "10px", // Add padding for additional space between text and border
+              // fontSize: "30px", // Set font size to 20
+              // lineHeight: "1.5", // Add space beneath each line
+              // padding: "10px", // Add padding for additional space between text and border
             }}
           >
             <AnimatedText text={textToType} />
@@ -224,50 +224,62 @@ const AnimatedComponent = () => {
           <br />
           <Bio />
           <br />
-          <div
+          <div className='text-4xl pb-4'
             style={{
               position: "relative",
 
-              left: "0",
-              margin: "auto", // Corrected 'margins' to 'margin'
-              width: "100vw",
-              marginLeft: "10px",
+              // margin: "auto", // Corrected 'margins' to 'margin'
+              // width: "100vw",
+              // marginLeft: "10px",
               background: "black",
               fontFamily: "monospace", // Add monospace font
-              fontSize: "30px", // Set font size to 20
-              lineHeight: "1.5", // Add space beneath each line
-              padding: "10px", // Add padding for additional space between text and border
+              // fontSize: "30px", // Set font size to 20
+              // lineHeight: "1.5", // Add space beneath each line
+              // padding: "10px", // Add padding for additional space between text and border
             }}
           >
             <AnimatedText text={workingOn} />
           </div>
-          <div
+          {/* <div
             style={{
               position: "relative",
               // top: i sVisible ? "0" : "-100vh", // Starts offscreen
-              left: "0",
-              marginLeft: "100px",
+              // left: "0",
+              // marginLeft: "100px",
               // margin: "auto", // Corrected 'margins' to 'margin'
-              width: "100vw",
+              // width: "100vw",
+              // marginLeft: "3px",
+
               // height: isVisible ? "100vh" : "0", // Expands to full height
               background: "black",
               // transition: "top 1s, height 1s",
               fontFamily: "monospace", // Add monospace font
               fontSize: "25px", // Set font size to 20
               lineHeight: "1.5", // Add space beneath each line
-              padding: "10px", // Add padding for additional space between text and border
+              // padding: "10px", // Add padding for additional space between text and border
             }}
-          >
+          > */}
+            <div className="text-2xl"
+            style={{
+              fontFamily: "monospace", // Add monospace font
+            }}>
             {mission_array.map((paragraph, index) => (
               <React.Fragment key={index}>
                 <AnimatedText text={paragraph} />
               </React.Fragment>
             ))}
+            </div>
+          {/* </div> */}
+
             <br />
+            <div className=''
+             style={{
+              fontFamily: "monospace", // Add monospace font
+            }}>
             <Table />
+            </div>
             <br />
             <Footer />
-          </div>
         </div>
       </div>
       {/* {isMobileOrTablet&&<MobileDisplay className={`sm:block md:block lg:hidden`} />} */}

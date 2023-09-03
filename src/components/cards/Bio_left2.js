@@ -37,16 +37,17 @@ const AnimatedComponent = () => {
       </div> */}
       <br />
       <div
+      className='text-xl'
         style={{
           position: "relative",
-          left: "0",
-          margin: "auto",
-          width: "70%",
+          // left: "0",
+          // marginRight: "auto",
+          // width: "70%",
           background: "black",
           fontFamily: "monospace",
-          fontSize: "25px",
-          lineHeight: "1.5",
-          paddingRight: "10px",
+          // fontSize: "25px",
+          // lineHeight: "1.5",
+          // paddingRight: "10px",
           wordWrap: "break-word", // Add word-wrap property
         }}
       >
