@@ -124,7 +124,7 @@ export default function Home() {
       </Head>
 
       <div className=""></div>
-      <div className="w-3/5 mx-auto md:w-7/10 sm:w-full">
+      <div className="3/5 mx-auto md:w-7/10 sm:w-4/5">
         <Table />
       </div>
     </div>

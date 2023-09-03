@@ -143,7 +143,7 @@ import { mission } from "../writing/mission";
 import Bio from "../../components/cards/Bio.js";
 import Footer from "../footer/Footer";
 // import Text from "../animations/Test_Animated";
-import MobileDisplay from "./Display_mobile";
+import MobileDisplay from "./Display_mobile2";
 import Table from "../tables/Table_scroll";
 
 const textToType =
@@ -154,7 +154,8 @@ const workingOn = "Projects and Current Research";
 const AnimatedComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isMobileOrTablet, setIsMobileOrTablet] = useState(
-    typeof window !== "undefined" && window.innerWidth <= 768
+    // typeof window !== "undefined" && window.innerWidth <= 768
+    false
   );
 
   useLayoutEffect(() => {

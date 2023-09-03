@@ -1,0 +1,11 @@
+.spanword {
+    transform: translateX(var(--delta));
+  }
+  
+
+  /* Define a CSS class to move the element */
+.move {
+    transform: translateX(100px);
+    transition: transform 1s;
+  }
+  
