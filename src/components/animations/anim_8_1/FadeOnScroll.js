@@ -196,7 +196,7 @@ const FadeLine = ({ lineText, id }) => {
         transition: 'opacity 1s, word-spacing 0.3s',
       }}
     >
-      {lineText}{" "}
+      {lineText}&nbsp;
     </span>
   );
 };
