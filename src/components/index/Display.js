@@ -145,7 +145,7 @@ import { mission } from "../writing/mission";
 import Bio from "../../components/cards/Bio.js";
 import Footer from "../footer/Footer";
 // import Text from "../animations/Test_Animated";
-import MobileDisplay from "./Display_mobile2";
+// import MobileDisplay from "./Display_mobile2";
 import Table from "../tables/Table_scroll";
 
 const textToType =
@@ -189,12 +189,13 @@ const AnimatedComponent = () => {
 
   return (
     <div>
-      {/* Display on small screens */}
-      <div className={`hidden lg:block`}>
+      {/* Display on small screens hidden */}
+<div className={``}>
         {" "}
         {/* Display on medium and large screens */}{" "}
         {/* Display on medium and large screens */}
         <div
+        className='w-3/5'
           style={{
             display: "flex",
             flexDirection: "column",
@@ -270,7 +271,8 @@ const AnimatedComponent = () => {
         </div>
       </div>
       {/* {isMobileOrTablet&&<MobileDisplay className={`sm:block md:block lg:hidden`} />} */}
-      {<MobileDisplay className={`sm:block md:block lg:hidden`} />}
+      {/* {<MobileDisplay className={`md:block lg:hidden`} />} */}
+
 
     </div>
   );
