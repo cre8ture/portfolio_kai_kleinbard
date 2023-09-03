@@ -163,7 +163,6 @@ const AnimatedComponent = () => {
           <p>{workingOn}</p>
         </AnimatedText2>
       </div>
-      <br/>
       <div className="w-full max-w-4xl mx-auto">
         {/* {mission_array.map((paragraph, index) => (
           <AnimatedText key={index}>
