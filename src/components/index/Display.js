@@ -135,10 +135,12 @@
 // export default AnimatedComponent;
 
 "use client";
-import React, { useState, useLayoutEffect, useEffect } from "react";
+// import React, { useState, useLayoutEffect, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+
 import AnimatedText from "../animations/Animated_text_final";
 // import Text2 from "../animations/Animated_text";
-import Typing from "../typing/Typing";
+// import Typing from "../typing/Typing";
 import { mission } from "../writing/mission";
 import Bio from "../../components/cards/Bio.js";
 import Footer from "../footer/Footer";
@@ -153,28 +155,28 @@ const workingOn = "Projects and Current Research";
 
 const AnimatedComponent = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [isMobileOrTablet, setIsMobileOrTablet] = useState(
+  // const [isMobileOrTablet, setIsMobileOrTablet] = useState(
     // typeof window !== "undefined" && window.innerWidth <= 768
-    false
-  );
+    // false
+  // );
 
-  useLayoutEffect(() => {
-    const handleResize = () => {
-      setIsMobileOrTablet(
-        typeof window !== "undefined" && window.innerWidth <= 768
-      );
-    };
+  // useLayoutEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobileOrTablet(
+  //       typeof window !== "undefined" && window.innerWidth <= 768
+  //     );
+  //   };
 
-    if (typeof window !== "undefined") {
-      window.addEventListener("resize", handleResize);
+  //   if (typeof window !== "undefined") {
+  //     window.addEventListener("resize", handleResize);
 
-      return () => {
-        if (typeof window !== "undefined") {
-          window.removeEventListener("resize", handleResize);
-        }
-      };
-    }
-  }, []);
+  //     return () => {
+  //       if (typeof window !== "undefined") {
+  //         window.removeEventListener("resize", handleResize);
+  //       }
+  //     };
+  //   }
+  // }, []);
 
   const mission_array = mission.split("\n");
 
@@ -267,7 +269,9 @@ const AnimatedComponent = () => {
           </div>
         </div>
       </div>
-      {isMobileOrTablet&&<MobileDisplay className={`sm:block md:block lg:hidden`} />}
+      {/* {isMobileOrTablet&&<MobileDisplay className={`sm:block md:block lg:hidden`} />} */}
+      {<MobileDisplay className={`sm:block md:block lg:hidden`} />}
+
     </div>
   );
 };

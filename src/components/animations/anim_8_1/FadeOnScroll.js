@@ -121,7 +121,7 @@ const FadeOnScroll = ({ children, id_from_parent }) => {
           } else {
             const newLine = `${line} ${word}`;
             // console.log(" window.innerWidth",  window.innerWidth)
-            if (window.innerHeight != undefined && getTextWidth(newLine) <= window.innerWidth - 160 + window.innerWidth/10) {
+            if (window.innerHeight != undefined && getTextWidth(newLine) <= window.innerWidth - 120) { //} 200 + window.innerWidth/10) {
               // Adjust the threshold (- 40) as needed to account for padding or margins
               line = newLine;
             } else {
