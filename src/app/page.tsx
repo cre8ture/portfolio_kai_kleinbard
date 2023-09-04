@@ -47,9 +47,20 @@ export default function Home() {
       </div>
 
       {/* Show Table2 only on sm and down */}  
-      <div className="block sm:hidden">
+      {/* <div className="block sm:hidden">
         <Table2 />
-      </div>
+      </div> */}
+
+<div className="hidden md:hidden">
+  <Table2 /> 
+</div>
+
+
+
+    {/* Show Default between 768px and 680px */}
+    <div className=".default-component">
+      <Table2 />
+    </div>
 
     </div>
   );

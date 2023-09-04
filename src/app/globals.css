@@ -30,6 +30,13 @@ body {
   animation: expand-graph 1s ease-in-out;
 }
 
+/* Show only between 768px and 680px */
+@media (min-width: 640px) and (max-width: 787px) {
+  .default-component {
+    display: block;
+  }
+}
+
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities;
