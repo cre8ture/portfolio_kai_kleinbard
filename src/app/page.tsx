@@ -1,67 +1,52 @@
-"use client";
-
+// "use client";
 // import Head from "next/head";
-// import Table from "../components/index/Display";  
+// import Table from "../components/index/Display";
 // import Table2 from "../components/index/Display_mobile2";
 
 // export default function Home() {
-
 //   return (
-//     <div>
+//     <div className="">
 //       <Head>
 //         <title>Kai Kleinbard</title>
 //         <link rel="icon" href="/flower.ico" />
 //       </Head>
 
-//       {/* Show Table on lg and larger screens */}
-//       <div className="hidden md:block lg:block"> 
+//       {/* Display Table on screens lg or larger */}
+//       <div className="hidden lg:block">
 //         <Table />
 //       </div>
 
-//       {/* Show Table2 only on md and smaller screens */}
-//       <div className="block md:block lg:hidden">
-//         <Table2 />  
+//       {/* Display Table2 on screens md or below */}
+//       <div className="block lg:hidden">
+//         <Table2 />
 //       </div>
-
 //     </div>
 //   );
 // }
 
 
+"use client";
 import Head from "next/head";
-import Table from "../components/index/Display";
-import Table2 from "../components/index/Display_mobile2"; 
+import Table from "../components/index/Display";  
+import Table2 from "../components/index/Display_mobile2";
 
 export default function Home() {
-
   return (
-    <div>
+    <div className="">
       <Head>
         <title>Kai Kleinbard</title>
         <link rel="icon" href="/flower.ico" />
       </Head>
 
-      {/* Show Table on md and up */}
+      {/* Display Table2 on screens md and below */}
+      <div className="block lg:hidden"> 
+        <Table2 />
+      </div>
+
+      {/* Display Table on screens lg or larger */}
       <div className="hidden md:block">
         <Table />
       </div>
-
-      {/* Show Table2 only on sm and down */}  
-      {/* <div className="block sm:hidden">
-        <Table2 />
-      </div> */}
-
-<div className="hidden md:hidden">
-  <Table2 /> 
-</div>
-
-
-
-    {/* Show Default between 768px and 680px */}
-    <div className=".default-component">
-      <Table2 />
-    </div>
-
     </div>
   );
 }
