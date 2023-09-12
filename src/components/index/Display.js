@@ -195,7 +195,7 @@ const AnimatedComponent = () => {
         {/* Display on medium and large screens */}{" "}
         {/* Display on medium and large screens */}
         <div
-        className='w-4/5 mx-auto'
+        className='w-4/5 ml-20 mr-auto'
           style={{
             display: "flex",
             flexDirection: "column",
@@ -219,11 +219,15 @@ const AnimatedComponent = () => {
               // padding: "10px", // Add padding for additional space between text and border
             }}
           >
+            
             <AnimatedText text={textToType} />
           </div>
           <br />
           <Bio />
+          
           <br />
+          <br />
+
           <div className='text-4xl pb-4'
             style={{
               position: "relative",
@@ -241,28 +245,12 @@ const AnimatedComponent = () => {
             <AnimatedText text={workingOn} />
           </div>
           {/* <div
-            style={{
-              position: "relative",
-              // top: i sVisible ? "0" : "-100vh", // Starts offscreen
-              // left: "0",
-              // marginLeft: "100px",
-              // margin: "auto", // Corrected 'margins' to 'margin'
-              // width: "100vw",
-              // marginLeft: "3px",
-
-              // height: isVisible ? "100vh" : "0", // Expands to full height
-              background: "black",
-              // transition: "top 1s, height 1s",
-              fontFamily: "monospace", // Add monospace font
-              fontSize: "25px", // Set font size to 20
-              lineHeight: "1.5", // Add space beneath each line
-              // padding: "10px", // Add padding for additional space between text and border
-            }}
+           
           > */}
             <div className="text-2xl"
-            style={{
-              fontFamily: "monospace", // Add monospace font
-            }}>
+              style={{
+                fontFamily: "monospace", 
+              }}>
             {mission_array.map((paragraph, index) => (
               <React.Fragment key={index}>
                 <AnimatedText text={paragraph} />
@@ -276,9 +264,15 @@ const AnimatedComponent = () => {
              style={{
               fontFamily: "monospace", // Add monospace font
             }}>
+          <br />
+          <br />
+          <br />
+
             <Table />
             </div>
             <br />
+          <br />
+
             <Footer />
         </div>
       </div>

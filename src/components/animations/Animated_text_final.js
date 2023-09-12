@@ -14,7 +14,7 @@ const FallingTextComponent = ({ text }) => {
         const bottomOfWindow = window.innerHeight + window.pageYOffset;
 
         if (elementTop + 30 > 0 && elementTop < window.innerHeight) {
-          element.style.transform = "translateX(10px)";
+          element.style.transform = "translateX(-190px)";
         }
         // else {
         //   element.style.transform = "translateX(-1000px)";
@@ -44,7 +44,7 @@ const FallingTextComponent = ({ text }) => {
 
         // if (elementTop <= 0) {
         if (elementTop + 30 > 0 && elementTop < window.innerHeight) {
-          element.style.transform = "translateX(10px)";
+          element.style.transform = "translateX(-190px)";
         }
         // else {
         //   element.style.transform = "translateX(1000px)";

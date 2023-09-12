@@ -151,7 +151,7 @@ const DataTable = ({ data }) => {
   };
 
   return (
-    <div className="p-0 text-2xl">
+    <div className="p-5">
       <table className="w-full text-left data-table">
         <thead>
           <tr>

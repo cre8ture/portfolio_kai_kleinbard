@@ -121,7 +121,7 @@ const FadeOnScroll = ({ children, id_from_parent }) => {
           } else {
             const newLine = `${line} ${word}`;
             // console.log(" window.innerWidth",  window.innerWidth)
-            if (window.innerHeight != undefined && getTextWidth(newLine) <= window.innerWidth -280) { //} 200 + window.innerWidth/10) {
+            if (window.innerHeight != undefined && getTextWidth(newLine) <= window.innerWidth - 280) { //} -280 + window.innerWidth/10) {
               // Adjust the threshold (- 40) as needed to account for padding or marginsgit
               line = newLine;
             } else {
@@ -150,7 +150,7 @@ const FadeOnScroll = ({ children, id_from_parent }) => {
   };
 
   return (
-    <div className='"moooooo' style={{ maxWidth: 'calc(100% - 40px)' }}>
+    <div className='moooooo' style={{ maxWidth: 'calc(100% - 40px)' }}>
       {lines.map((line, i) => (
         <FadeLine
           key={i + `_` + id_from_parent}

@@ -142,7 +142,7 @@ const AnimatedComponent = () => {
     setIsVisible(true);
   }, []);
 
-  console.log("MOBILE IS HERE TO STAY!")
+  // console.log("MOBILE IS HERE TO STAY!")
   return (
     <div className="MobileDisplay mx-auto md:w-7/10 sm:w-4/5 px-3" style={{ background: "black", fontFamily: "monospace", fontSize: "15px", lineHeight: "1.5", padding: "10px" }}>
       <div className="w-full text-5xl mx-auto">

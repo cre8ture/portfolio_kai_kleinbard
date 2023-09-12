@@ -37,7 +37,7 @@ const AnimatedComponent = () => {
       </div> */}
       <br />
       <div
-      className='text-xl'
+      className='text-2xl'
         style={{
           position: "relative",
           // left: "0",
