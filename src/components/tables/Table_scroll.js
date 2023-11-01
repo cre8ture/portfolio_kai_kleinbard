@@ -156,19 +156,19 @@ const DataTable = ({ data }) => {
         <thead>
           <tr>
             <th
-              className="px-1 py-2 cursor-pointer"
+              className="border-b px-1 py-2 cursor-pointer"
               onClick={() => handleSort("title")}
             >
               Name {getChevronIcon("title")}
             </th>
             <th
-              className="px-1 py-2 cursor-pointer"
+              className="border-b px-1 py-2 cursor-pointer"
               onClick={() => handleSort("description")}
             >
               Description {getChevronIcon("description")}
             </th>
             <th
-              className="px-1 py-2 cursor-pointer"
+              className="border-b px-1 py-2 cursor-pointer"
               onClick={() => handleSort("category")}
             >
               Type {getChevronIcon("category")}
@@ -189,13 +189,12 @@ const DataTable = ({ data }) => {
               }}
               onClick={() => handleRowClick(item.link)}
             >
-              <td className="border px-4 py-2">
+              <td className="px-4 py-2">
                 <Link href={item.link}>{item.title}</Link>
               </td>
-              <td className="border px-4 py-2">{item.description}</td>
-              <td className="border px-4 py-2">
+              <td className="px-4 py-2">{item.description}</td>
+              <td className="px-4 py-2">
                 <div
-                  // className={`inline-block rounded-full text-white p-1 py-2 text-xs font-bold ${getCategoryColor(
                   className={`inline-block text-white p-1 py-2 text-xs font-bold ${getCategoryColor(
                     item.category
                   )}`}
@@ -209,4 +208,4 @@ const DataTable = ({ data }) => {
       </table>
     </div>
   );
-};
+                  }  
